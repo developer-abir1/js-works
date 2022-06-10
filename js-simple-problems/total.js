@@ -4,7 +4,7 @@ const cart = [
     {name:"Watch" , price:400 , quantity:6},
     {name:"Iphone" , price:5500, quantity:8},
 ]
- 
+ /* 
      let cartTotal=0;
     for(const product of cart){
         
@@ -15,4 +15,16 @@ const cart = [
 
         
     } 
-    console.log(cartTotal)
+    console.log(cartTotal) */
+
+ function totalPrice(){
+
+    let cartTotal = 0;
+    for(const product of cart){
+       const productPrice = product.price * product.quantity
+       cartTotal = cartTotal + productPrice
+    }
+     return cartTotal
+ }
+
+ console.log(totalPrice())
