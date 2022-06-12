@@ -21,7 +21,25 @@ const mamaFeet = feetToInch(300)
 
 
 //  3. calcualtion
-// pageReuirements
+ function  pageReuirements(book){
+
+    const simpleBooks = 100;
+    const premiamBooks = 200;
+    const advenchBooks = 300;
+
+    if(book <1){
+
+        const simple = 1 *simpleBooks;
+        return simple
+
+    }
+    else if(book < 2){
+        const simple = 2 *premiamBooks;
+        return simple
+
+    }
+
+ }
 // book 1 hass 100 pages
 // book 2 hass 200 pages
 // book 3 hass 100 pages
