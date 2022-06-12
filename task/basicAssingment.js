@@ -43,16 +43,37 @@
             // }
             // console.log(picnicBuget(98))
 
-const friendArr = ["abir hassn" , "kobir hassn ", "my dada" , "aza vai"]
+const friendArr = ["abirhassn" , "kobir hassn ", "my dada" , "azavai", "ka" , "boysakhi" , "kobir hassan" , "abir" , "ka" , "abir"]
 
-function oddFrien( ){
+function oddFrien(arry){
 
-     for (let i = 0; i < friendArr.length; i+=2) {
-        const element = friendArr[i];
-        console.log(element.length)
+    const oddName=[]
+
+     for (const element of arry) {
+        //  console.log(element)
+    //  if(element.length %2 !==1){
+    //   console.log(element)
+   if(oddName.indexOf(element) == -1){
+     oddName.push(element)
+   }
         
      }
+     
+return oddName
 
 }
 
-oddFrien()
+const result = oddFrien(friendArr)
+console.log(result)
+
+const myStr = "abbir khan";
+function reversItem(text){
+
+    let revers = ""
+
+    for(const letter of text){
+        revers = letter + revers
+    }
+return revers
+}
+console.log(reversItem(myStr))
