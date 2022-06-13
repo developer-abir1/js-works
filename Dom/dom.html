@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Welcome to blog websit </h1></header>
+    <main>
+        <section>
+            <article  class="blog">
+                <h3>my Awesome Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt inventore esse aliquid magnam porro aut doloremque quo, architecto cupiditate reprehenderit veniam dolores quaerat accusamus labore maxime adipisci ad non.</p>
+            </article>
+            <article class="blog">
+                <h3  >my Awesome Blog-2</h3>
+                <p>Doloribus deserunt quaerat eveniet id, error incidunt iure sunt accusamus rem eos totam consectetur perferendis delectus atque neque sed ipsa quidem cum quam molestiae aperiam ad! Hic inventore eos aspernatur.</p>
+            </article>
+            <article class="blog">
+                <h3 id="head">my Awesome Blog-3</h3>
+                <p>Molestiae repudiandae dignissimos modi, numquam ipsa alias. Eum error saepe inventore cupiditate quia. Dignissimos velit, non assumenda, cumque omnis esse in eos magnam atque ipsam dolorum explicabo inventore et voluptatem.</p>
+            </article>
+        </section>
+    </main>
+    <script>
+    const reversa = document.getElementById("head");
+    
+    function reversStr(text){ 
+      let letter ="";
+      for(const element of text){
+        letter =   element + letter
+        
+      }
+     return letter
+    }
+const result = reversStr(reversa.innerText);  
+console.log(result)
+   
+     
+const blogs = document.querySelectorAll(".blog");
+console.log(blogs)
+
+for(const element of blogs){
+console.log(element.innerText)
+}
+
+    </script>
+</body>
+</html>
