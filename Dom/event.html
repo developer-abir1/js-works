@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Lesaner </title>
+<style>
+    /* .id{
+        backgroundColor: aqua;
+    } */
+</style>
+</head>
+<body>
+    <h1> More Event </h1>
+   <section>
+    <h3 id="text">Very very importence information</h3>
+    <input id="delete-confrm" type="text" placeholder="delete conforme">
+    <button id="delete-btn" disabled >Delete </button>
+   </section>
+
+   <script>
+            const delte= document.getElementById("delete-btn");
+        const texts= document.getElementById("text");
+        delte.addEventListener("click",function(){
+            texts.style.display ="none"
+        })
+
+        const deleteConfrm = document.getElementById("delete-confrm").addEventListener("keyup" , function(event){
+             if(event.target.value == "delete"){
+                delte.removeAttribute("disabled")
+             }
+       else{
+        delte.setAttribute("disabled" , true)
+       }
+        })
+
+   </script>
+</body>
+</html>

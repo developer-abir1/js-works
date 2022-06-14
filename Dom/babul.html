@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babul vai</title>
+</head>
+<body>
+    <h1>Babul vai kmn aso</h1>
+    <ul id="ulcontainer">
+        <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li class="item">Quas, in perferendis doloremque ad odio voluptatibus nemo?</li>
+        <li id="thrad-item" class="item">Illum, sequi maiores. Fuga ipsum nobis iste deserunt!</li>
+        <li class="item">Sit cum amet perferendis iusto nisi! Officiis, soluta.</li>
+        <li class="item">Id eius hic, cumque sint explicabo in ea?</li>
+        <li class="item">Corporis ex ea impedit eveniet, voluptate dolorem animi.</li>
+        <li class="item">Eaque amet qui sit voluptate, facere modi quibusdam.</li>
+    </ul>
+
+    <script>
+         
+        
+        document.getElementById("thrad-item").addEventListener("click" , function(event){
+            console.log("Thard item")
+            event.stopPropagation()
+           
+        })
+        document.getElementById("ulcontainer").addEventListener("click" , function(event){
+            console.log("ul container")
+         
+           
+        })
+       
+    </script>
+</body>
+</html>
