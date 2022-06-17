@@ -18,7 +18,7 @@
  <div class="container">
     <div class=" row  ">
         <div class="col-md-6">
-            <img class=" " src="/img/young-businessman-working-from-his-office-counting-cash-money_181624-33459.png" alt="" srcset="">
+            <img class=" h-100 " src="/img/young-businessman-working-from-his-office-counting-cash-money_181624-33459.png" alt="" srcset="">
         </div>
         <div class="col-md-6">
             <div class=" h-100   " style="background-color: lightgray;"> 
@@ -52,8 +52,8 @@
                    </div>
                    <!-- Total Balance start  -->
                    <div class="pb-4">
-                     <h2>Total Expenses: 2520</h2>
-                     <h2>Balance: 8000</h2>
+                     <h2>Total Expenses: <span id="totalExpenses">0</span> </h2>
+                     <h2>Balance:  <span id="blance">0</span> </h2>
                    </div>
      <!-- Total Balance end  -->
                   </div>
@@ -61,14 +61,14 @@
                   <div class="d-flex justify-content-center">
                     <div class=" ">
                         <label for="" class="fs-6  ">Save:</label>
-                        <input class="  px-4 py-1 rounded "  style="border: none; " type="text" placeholder="Enter Income" aria-label=".form-control-lg example">
+                        <input id="saveAmmount" class="  px-4 py-1 rounded "  style="border: none; " type="text" placeholder="Enter Income" aria-label=".form-control-lg example">
                     </div>
                     <div class="ms-4 ">
                         %
                     </div>
                        <div class="ms-4">
 
-                        <button class="btn btn-info">
+                        <button onclick="handleSaveAmmount()" class="btn btn-info">
                             Save
                         </button>
                        </div>
@@ -77,8 +77,8 @@
                    <!-- Save percent  end-->
                    <!-- Net Ammount start -->
                    <div class="mt-5 text-center">
-                    <h4>Saveing Ammount: 2000</h4>
-                    <h4>Rumming Balance: 8000</h4>
+                    <h4>Saveing Ammount: <span id="savingAmmon">0</span> </h4>
+                    <h4>Rumming Balance: <span id="runnigBalance">0</span></h4>
                   </div>
                    <!-- Net Ammount end -->
                   <div>
