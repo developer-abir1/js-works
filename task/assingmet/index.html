@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+<h1 class="text-center  fw-bold" style="color:slateblue;">Mony Monster</h1>
+    </header>
+    <main>
+ <div class="container">
+    <div class=" row  ">
+        <div class="col-md-6">
+            <img class=" " src="/img/young-businessman-working-from-his-office-counting-cash-money_181624-33459.png" alt="" srcset="">
+        </div>
+        <div class="col-md-6">
+            <div class=" h-100   " style="background-color: lightgray;"> 
+                <div class="mb-3 ">
+                    <!-- Income start -->
+                  <div class="  text-center ">
+                    <h1  class=" mb-4">Income</h1>
+                   
+                     <label for="">Income</label>
+                     <input id="incomeAmmount" class="  px-4 py-1 rounded "  style="border: none; " type="text" placeholder="Enter Income" aria-label=".form-control-lg example">
+    
+                  </div>
+                  <!-- income end -->
+                  <div class="  text-center ">
+                    <h1 class=" mt-4">Expenses</h1>
+                   
+                   <div class="pb-4">
+                    <label for="">Food</label>
+                    <input id="foodAmmmount" class="  px-4 py-1 rounded "  style="border: none; " type="text" placeholder="Enter Income" aria-label=".form-control-lg example">
+                   </div>
+                   <div class="pb-4">
+                    <label for="">Rent</label>
+                    <input id="rentAmmont" class="  px-4 py-1 rounded "  style="border: none; " type="text" placeholder="Enter Income" aria-label=".form-control-lg example">
+                   </div>
+                   <div class="pb-4">
+                    <label for="">Other</label>
+                    <input id="otherAmmoutn" class="  px-4 py-1 rounded "  style="border: none; " type="text" placeholder="Enter Income" aria-label=".form-control-lg example">
+                   </div>
+                   <div class="pb-4">
+                     <button onclick="handleCalculate()" class="btn btn-info">Calculate</button>
+                   </div>
+                   <!-- Total Balance start  -->
+                   <div class="pb-4">
+                     <h2>Total Expenses: 2520</h2>
+                     <h2>Balance: 8000</h2>
+                   </div>
+     <!-- Total Balance end  -->
+                  </div>
+                  <!-- Save percent -->
+                  <div class="d-flex justify-content-center">
+                    <div class=" ">
+                        <label for="" class="fs-6  ">Save:</label>
+                        <input class="  px-4 py-1 rounded "  style="border: none; " type="text" placeholder="Enter Income" aria-label=".form-control-lg example">
+                    </div>
+                    <div class="ms-4 ">
+                        %
+                    </div>
+                       <div class="ms-4">
+
+                        <button class="btn btn-info">
+                            Save
+                        </button>
+                       </div>
+                   
+                  </div>
+                   <!-- Save percent  end-->
+                   <!-- Net Ammount start -->
+                   <div class="mt-5 text-center">
+                    <h4>Saveing Ammount: 2000</h4>
+                    <h4>Rumming Balance: 8000</h4>
+                  </div>
+                   <!-- Net Ammount end -->
+                  <div>
+                    
+                  </div>
+                    
+                  </div>
+        </div>
+    
+    </div>
+ </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/index.js"></script>
+</body>
+</html>
