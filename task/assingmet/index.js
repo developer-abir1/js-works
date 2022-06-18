@@ -8,7 +8,7 @@ const blance = document.getElementById('blance');
 const saveAmmont = document.getElementById('saveAmmount');
 const saveingAmmount = document.getElementById('savingAmmon');
 const runningBalance = document.getElementById('runnigBalance');
-
+ 
 
 const otherBuy =[
     foodAmmmount,
@@ -43,8 +43,8 @@ const handleCalculate =()=>{
             const saveAmmounts = saveAmmountNumber * mainAmmount ;
             const totalAmounts = saveAmmounts / 100;
             const saveingAmmouns = saveingAmmount.innerText = totalAmounts; 
-const runningBalanceAmmount = mainAmmount -  saveingAmmouns;
-        const   totalRunningBalance  =   runningBalance.innerText = runningBalanceAmmount
+            const runningBalanceAmmount = mainAmmount -  saveingAmmouns;
+            const   totalRunningBalance  =   runningBalance.innerText = runningBalanceAmmount
             return saveingAmmouns , totalRunningBalance
 
 
